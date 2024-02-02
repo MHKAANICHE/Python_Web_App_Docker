@@ -14,13 +14,24 @@ jobs:
     - name : install dependencies 
       run : | 
         make install
+    - name : Format code
+      run : |
+        make format   
     - name : Lint with pylint
       run : | 
         make lint
     - name : Test with pytest
       run : |
         make test
-    - name : Format code
+    - name : build code
+      run : |
+        make build   
+    - name : run code
+      run : |
+        make run
+    - name : deploy code
       run : |
         make format
-    
+
+
+
