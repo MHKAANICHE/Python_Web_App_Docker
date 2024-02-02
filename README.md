@@ -15,7 +15,7 @@ Welcome to the CI/CD Pipeline Deployment repository! This project is deployed on
   
 <div align="center">
   <h2 style="font-size: 24px; color: #333;">Explore Our Deployed Application</h2>
-  <a href="http://51.20.52.37:8080/" style="text-decoration: none;">
+  <a href="http://51.20.52.37:8080/docs" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/Visit%20Our%20App-Click%20Here-blue?style=for-the-badge" alt="Visit Our App" style="width: 200px; height: 50px;">
   </a>
 </div>
