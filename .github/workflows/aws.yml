@@ -26,12 +26,6 @@ jobs:
     - name : build code
       run : |
         make build   
-    - name : run code
-      run : |
-        make run
-    - name : deploy code
-      run : |
-        make format
 
 
 
