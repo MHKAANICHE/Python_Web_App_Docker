@@ -17,13 +17,17 @@ def test_read_main():
 
 
 def test_read():
-    response = client.get("/phrase/Barack Obama")
+    response = client.get("/search/barack")
     assert response.status_code == 200
     assert response.json()["result"] == [
-        "barack hussein obama ii",
-        "bə-rahk hoo-sayn oh-bah-mə",
-        "august",
-        "american politician",
-        "44th president"
+        "Barack Obama",
+        "Barack Obama Sr.",
+        "Presidency of Barack Obama",
+        "Family of Barack Obama",
+        "Barack (name)",
+        "Barack (disambiguation)",
+        "Barack (brandy)",
+        "Zach Barack",
+        "Barack Obama religion conspiracy theories",
+        "Barack Obama (disambiguation)",
     ]
-
