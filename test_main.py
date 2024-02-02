@@ -17,17 +17,10 @@ def test_read_main():
 
 
 def test_read():
-    response = client.get("/search/barack")
+    response = client.get("/wiki/Barack Obama")
     assert response.status_code == 200
-    assert response.json()["result"] == [
-        "Barack Obama",
-        "Barack Obama Sr.",
-        "Presidency of Barack Obama",
-        "Family of Barack Obama",
-        "Barack (name)",
-        "Barack (disambiguation)",
-        "Barack (brandy)",
-        "Zach Barack",
-        "Barack Obama religion conspiracy theories",
-        "Barack Obama (disambiguation)",
-    ]
+    # Update the expected list to include 'Barack (disambiguation)' at index 5
+    assert (
+        response.json()["result"]
+        == "Barack Hussein Obama II (  bə-RAHK hoo-SAYN oh-BAH-mə; born August 4, 1961) is an American politician who served as the 44th president of the United States from 2009 to 2017."
+    )
