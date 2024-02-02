@@ -1,3 +1,5 @@
+[![Python application test with Github Actions](https://github.com/MHKAANICHE/Python_Web_App_Docker/actions/workflows/devops.yml/badge.svg)](https://github.com/MHKAANICHE/Python_Web_App_Docker/actions/workflows/devops.yml)
+
 <h1 align="center">CI/CD Pipeline Deployment on AWS EC2 Free Tier Instance</h1>
 
 <p align="center">
